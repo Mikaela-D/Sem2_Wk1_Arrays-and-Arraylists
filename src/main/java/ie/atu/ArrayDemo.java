@@ -3,10 +3,17 @@ package ie.atu;
 import java.util.Scanner;
 
 public class ArrayDemo {
+
+    //Static method main
     public static void main(String[] args) {
+
+        //Declares an array of integers
         int[] anArray;
+
+        //Allocates memory for 10 integers
         anArray = new int[10];
 
+        //Initialise elements
         anArray[0] = 100;
         anArray[1] = 200;
         anArray[2] = 300;
@@ -18,6 +25,7 @@ public class ArrayDemo {
         anArray[8] = 900;
         anArray[9] = 1000;
 
+        //Print elements
         System.out.println("Element at index 0: " + anArray[0]);
         System.out.println("Element at index 1: " + anArray[1]);
         System.out.println("Element at index 2: " + anArray[2]);
@@ -29,8 +37,11 @@ public class ArrayDemo {
         System.out.println("Element at index 8: " + anArray[8]);
         System.out.println("Element at index 9: " + anArray[9]);
 
+        //Try catch to detect an out of bounds exception
         try {
             int indexValue = 0;
+
+            //Enhanced for loop
             for (int value : anArray) {
                 System.out.println("Element at index " + indexValue + " : " + value);
                 indexValue++;
